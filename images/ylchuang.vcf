@@ -1,0 +1,20 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Address Book 6.1//EN
+N:Chuang;Yueh-Lin;;;
+FN:Yueh-Lin Chuang
+ORG:MSA;
+TITLE:Customer Quality Engineer
+EMAIL;type=INTERNET;type=WORK;type=pref:email@chuang.de
+item1.ADR;type=HOME;type=pref:;;;Berlin;;10247;Germany
+item1.X-ABADR:de
+item2.URL;type=pref:http://chuang.de
+item2.X-ABLabel:_$!<HomePage>!$_
+item3.URL:http://de.linkedin.com/in/ylchuang
+item3.X-ABLabel:linkedin
+item4.URL:http://www.xing.com/profile/YuehLin_Chuang
+item4.X-ABLabel:xing
+CATEGORIES:card
+UID:5ad5550d-11dd-495e-8c1e-04ad303eb145
+X-ABUID:16798CC4-8B00-488E-9628-015DA131F57D:ABPerson
+END:VCARD
