@@ -15,7 +15,8 @@ font-family: 'Bungee', cursive;
   font-size:16vmin;
   line-height: 0.9em;
   text-align:center;
-  
+   width:100%;
+  height:100%;
 }
 .outer {
   display: table;
@@ -50,14 +51,42 @@ span.LastName{
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#2d89ef">
 <meta name="theme-color" content="#ffc227">
-    
+
+<script>
+var count=0;
+
+function colorLoop(){
+var cFN=['#d08c60','#40798c','#b6465f','#153243','#9bc1bc','#FFFFFF'];  
+var cLN=['#ffcb69','#70a9a1','#890620','#b4b8ab','#f4f1bb','#3A3D2D'];  
+var cBG=['#797d62','#cfe0c3','#da9f93','#f4f9e9','#5ca4a9','#FFC227'];     
+  var firstN=document.getElementById("FN");
+firstN.style.color=cFN[count];
+  var lastN=document.getElementById("LN");
+ lastN.style.color=cLN[count];
+ var backG=document.getElementById("BG");
+  backG.style.backgroundColor=cBG[count];
+  
+  count=count+1;
+  
+/*  var countDisplay=document.getElementById("cCount");
+  countDisplay.innerHTML=count;
+  */
+  
+  if (count>5){
+    count=0    
+  };
+};
+	</script>
+	
+	
+	
 </head>
-<body>
+<body onclick="colorLoop();" id="BG">
 <div class="outer">
   <div class="middle">
     <div class="inner">
-      <span class="FirstName">Gooch</span><br><span class="LastName">Chuang
-      </div></div>
+      <span class="FirstName" id="FN">Gooch</span><br><span class="LastName" id="LN">Chuang
+	    </span></div></div>
   </div>
 </div>   
     </body>
