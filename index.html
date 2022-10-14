@@ -73,13 +73,16 @@ var count=0;
 function colorLoop(){
 var cFN=['#ffcb69','#40798c','#b6465f','#153243','#9bc1bc','#E87A00','#C95F98','#26676E','#FFFFFF'];  
 var cLN=['#d08c60','#70a9a1','#890620','#b4b8ab','#f4f1bb','#F5B512','#DC747D','#67826F','#3A3D2D'];  
-var cBG=['#797d62','#cfe0c3','#da9f93','#f4f9e9','#5ca4a9','#045174','#A15295','#ABAC72','#FFC227'];     
+var cBG=['#797d62','#cfe0c3','#da9f93','#f4f9e9','#5ca4a9','#045174','#A15295','#ABAC72','#FFC227']; 
+var cML=['#ffcb69','#40798c','#b6465f','#153243','#9bc1bc','#E87A00','#C95F98','#26676E','#FFFFFF'];
   var firstN=document.getElementById("FN");
 firstN.style.color=cFN[count];
   var lastN=document.getElementById("LN");
  lastN.style.color=cLN[count];
  var backG=document.getElementById("BG");
   backG.style.backgroundColor=cBG[count];
+ var cMail=document.getElementById("ML");
+  cMail.style.color=cML[count];  
   
   count=count+1;
   
@@ -103,7 +106,7 @@ firstN.style.color=cFN[count];
       <span class="FirstName" id="FN">Gooch</span><br><span class="LastName" id="LN">Chuang
 	    </span></div></div>
   </div>
-<div class="Mail">email at chuang dot de</div></div>
+<div class="Mail" id="ML">email at chuang dot de</div></div>
 </div>   
     </body>
 	</html>
